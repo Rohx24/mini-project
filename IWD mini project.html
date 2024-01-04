@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Impact;
+      border: 1px solid #000000;
+      background: rgb(18,1,208);
+      background: linear-gradient(90deg, rgba(18,1,208,1) 15%, rgba(153,44,255,1) 45%, rgba(213,0,255,1) 61%, rgba(235,0,151,1) 97%);
+    }
+
+    .banner 
+    {
+      position: relative;
+      text-align: center;
+    }
+
+    #video-bg 
+    {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    .banner img 
+    {
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border: 4px solid #000000;
+      border-radius: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner-content 
+    {
+      position: absolute;
+      top: 19%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      text-decoration: wavy;
+      margin-top: 1px;
+      z-index: 2;
+      font-size: 40px;
+      background: linear-gradient(90deg, rgba(77,255,44,1) 27%, rgba(0,171,235,1) 42%, rgba(0,254,255,1) 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-stroke: 1px #000000;
+    }
+
+    .banner-content h1 
+    {
+      margin: 0;
+      font-size: 52px;
+      font-style: italic;
+    }
+
+    .banner-content p 
+    {
+      font-style: oblique;
+      margin: 10px 0 0;
+      font-size: 28px;
+      font-style: italic;
+      font-weight: bolder;
+      border: 30px #000000;
+    }
+
+    .button-container 
+    {
+      font-size: 20px;
+      margin-top: -10px;
+      margin-right: -660px;
+      margin-left: 660px;
+    }
+
+    .banner img 
+    {
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border: 4px solid #000000;
+      border-radius: 8px;
+    }
+
+    .button-container a 
+    {
+      display: inline-block;
+      padding: 1px 2px;
+      background-color: #8c090900;
+      color: #000000;
+      text-decoration: wavy;
+      -webkit-text-stroke: #000000;
+      border: 2px solid #03000c;
+      border-radius: 4px;
+      
+    }
+    .budget-box 
+    {
+      width: 300px;
+      padding: 20px;
+      border: 12px solid #ccc;
+      border: 12px solid #000000;
+      border-radius: 8px;
+      margin: 20px auto;
+      text-align: center;
+      z-index: 2;
+      background-color: #d0cfcf;
+    }
+
+    .budget-box:hover 
+    {
+      transform: scale(1.03);
+    }
+
+    .budget-box label 
+    {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .budget-box select 
+    {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .budget-box select:hover 
+    {
+      transform: scale(1.0);
+    }
+
+    .budget-box select,
+    .budget-box button,
+    .budget-box label
+    {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .budget-box button 
+    {
+      background-color: #4CAF50;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 7px;
+    }
+
+    .budget-box button:hover 
+    {
+      transform: scale(1.05);
+    }
+
+    .budget-box select,
+    .budget-box button 
+    {
+      margin-bottom: 20px;
+      
+    }
+    
+    footer 
+    {
+      border: #000000;
+      border-radius: 8px;
+      background: rgb(18,1,208);
+      background: linear-gradient(90deg, rgba(18,1,208,1) 15%, rgba(153,44,255,1) 45%, rgba(213,0,255,1) 61%, rgba(235,0,151,1) 97%);
+      color: #000000;
+      text-align: center;
+      padding: 1px;
+    }
+
+    .social-icons 
+    {
+      margin-top: 10px;
+    }
+
+    .social-icons:hover 
+    {
+      transform: scale(1.03);
+    }
+
+    .social-icons img 
+    {
+      width: 30px;
+      height: 30px;
+      margin: 0 1px;
+    }
+    .hr 
+    {
+      border: 3px solid #000000;
+      margin: 20px 0;
+    }
+  </style>
+<title>Car Quest</title>
+</head>
+<body>
+  <marquee>AutocarIndia: Hyundai Verna gets mindblowing 5 stars on the Global NCAP | Tesla started deliveries for the CYBERTRUCK!! | TESLA held meetings with PM Narendra Modi to set up plants in Gujurat | Porsche planning to stick to ICE Engines on their 911 models for as long as possible! | Lamborghini Ruvuelto costs around Rs.8.86 Crore, Sold out in India until 2026!!!</marquee>
+
+  <div class="banner">
+    <div class="video-blur">
+    <video autoplay muted loop id="video-bg">
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    <img src="C:\Users\Roh\Pictures\pxfuel.jpg" alt="Banner Image">
+
+    <div class="banner-content">
+      <h1>Car Quest</h1>
+      <p>Your Drive, Your Priorities. Find Your Perfect Ride!</p>
+
+      <div class="button-container">
+        <a href="file:///E:/RVU/IWd/About%20us.html">About</a>
+        <a href="https://www.autocarindia.com/car-news">News Feed</a>
+      </div>
+    </div>
+  </div>
+  <marquee>Disclaimer: Please select Your budget and the type of chassis you are looking for...</marquee>
+  <div class="budget-box">
+    <h2>Find Your Perfect Ride!</h2>
+    <label for="budget">Select Budget:</label>
+    <select id="budget" name="budget">
+      <option value="11-15">11 - 25 Lakhs</option>
+      <option value="25-45">25 - 45 Lakhs</option>
+      <option value="45-90">45 - 90 Lakhs</option>
+      <option value="95-100">95 - 1.00+ Crores</option>
+    </select>
+
+    <label for="vehicle-type">Select Vehicle Type:</label>
+    <select id="vehicle-type" name="vehicle-type">
+      <option value="SUV">SUV</option>
+      <option value="HYBRID">HYBRID</option>
+      <option value="SEDAN">SEDAN</option>
+      <option value="LUXURY">LUXURY</option>
+    </select>
+
+    <button onclick="submitData()">Submit</button>
+  </div>
+<hr>
+  <footer>
+    <p>&copy; 2023 Car Quest Pvt Ltd</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><img src="C:\Users\Roh\Pictures\fb.png" alt="Facebook"></a>
+      <a href="https://www.Instagram.com"><img src="C:\Users\Roh\Pictures\—Pngtree—instagram icon instagram logo_3547981.png" alt="Instagram"></a>
+      <a href="https://www.twitter.com"><img src="C:\Users\Roh\Pictures\Black-icon-Twitter-logo-transparent-PNG.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script>
+function submitData() 
+{
+  var selbud = document.getElementById("budget").value;
+  var selveh = document.getElementById("vehicle-type").value;
+
+  if (selbud === "11-15" && selveh === "SUV") 
+  {
+    window.location.href = "suv_11-15.html";
+  } 
+  else if (selbud === "25-45" && selveh === "SUV") 
+  {
+    window.location.href = "suv_25-45.html";
+  } 
+  else if (selbud === "45-90" && selveh === "SUV") 
+  {
+    window.location.href = "suv_45-90.html";
+  } 
+  else if (selbud === "11-15" && selveh === "SEDAN") 
+  {
+    window.location.href = "sedan_11-15.html";
+  } 
+  else if (selbud === "25-45" && selveh === "SEDAN") 
+  {
+    window.location.href = "sedan_25-45.html";
+  } 
+  else if (selbud === "45-90" && selveh === "SEDAN") 
+  {
+    window.location.href = "sedan_45-90.html";
+  } 
+  else if (selbud === "25-45" && selveh === "HYBRID") 
+  {
+    window.location.href = "hybrid_25-45.html";
+  } 
+  else if (selbud === "95-100" && selveh === "LUXURY") 
+  {
+    window.location.href = "luxury_91-95.html";
+  } 
+  else 
+  {
+    alert("Error: No cars found for the selected combination of budget and vehicle type.");
+  }
+}
+  </script>
+</body>
+</html>
