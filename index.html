@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To CarQuest Login</title>
+  <style>
+    body 
+    {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica;
+      overflow: hidden;
+      font-weight: bolder;
+    }
+    
+    video 
+    {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    .welcome-message 
+    {
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ffffff;
+      font-size: 2.5em;
+      background: linear-gradient(90deg, rgba(77,255,44,1) 27%, rgba(0,171,235,1) 42%, rgba(0,254,255,1) 100%);
+      -webkit-background-clip: text;
+    }
+    
+
+    .logo-container 
+    {
+      position: absolute;
+      top: 5px;
+      left: 700px;
+      z-index: 1; /* Ensure the logo is above the video */
+    }
+
+    .logo 
+    {
+      width: 150px; /* Adjust the width as needed */
+      height: auto;
+    }
+
+    .login-container
+    {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .login-container h1 
+    {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .login-form 
+    {
+      background: rgba(0, 0, 0, 0.43);
+      padding: 20px;
+      border-radius: 10px;  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-group 
+    {
+      margin-bottom: 20px;
+      margin-right: 24px;
+    }
+
+    .form-group label 
+    {
+      font-size: 1.2em;
+      display: block;
+      margin-bottom: 5px;
+      margin-left: 20px;
+    }
+
+    .form-group input 
+    {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-group button 
+    {
+      background-color: #4CAF50;
+      color: #651111;
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 28px;
+    }
+
+    .form-group a 
+    {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline>
+    <source src="E:\RVU\IWd\CROWNED - TIMELESS.mp4" type="video/mp4">
+  </video>
+
+  <div class="logo-container">
+    <img class="logo" src="C:\Users\Roh\Pictures\Screenshot (80).jpg" alt="Logo">
+  </div>
+
+  <div class="welcome-message">
+    <p>Welcome to CarQuest</p>
+  </div>
+
+  <div class="login-container">
+    <div class="login-form">
+      <h1>Login</h1>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <button type="button" onclick="redirectToPage()">Login</button>
+        </div>
+        <script>
+          function redirectToPage() 
+          {
+            window.location.href = "file:///E:/RVU/IWd/IWD%20mini%20project.html";
+          }
+        </script>
+        
+      </form>
+    </div>
+  </div>
+</body>
+</html>
